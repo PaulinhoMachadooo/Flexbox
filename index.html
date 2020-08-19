@@ -4,18 +4,38 @@
         <meta charset="UTF8"/>
         <meta name="viewport" content="width=device-width,user-scalable=0" />
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+             <!--      ......JAVASCRIPT ABRIR E FECHAR MENU MOBILE.......        -->
+        <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+        </script>
  
         <title>MediCenter</title>
     </head>
     <body>
-
+                            <!--      ......LOGOTIPO.......        -->
         <header>
             <div class="container">
                 <div class="logo"> 
                    <a href=""><img src="assets/images/logo.png" /></a>
                 </div>
+
+                            <!--      ......MENU.......        -->
                 <div class="menu">
                     <nav>
+                        <div class="menuMobile">
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                            <div class="mm_line"></div>
+                        </div>
                         <ul>
                             <li class="active"><a href="">Home</a></li>
                             <li><a href="">Home</a></li>
@@ -30,13 +50,15 @@
             </div>
 
         </header>
-
+                            <!--      ......BANNER PRINCIPAL.......        -->
         <section id="banner">
             <div class="container column">
                 <div class="banner_headline">
                     <h1>Top notch experience</h1>
                     <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
                 </div>
+
+                            <!--      ......BANNER DENTRO DO PRINCIPAL.......        -->
                 <div class="banner_options">
                     <div class="banner1">
                         <div class="banner_title">Emergency Case</div>
@@ -69,7 +91,7 @@
                 </div>
             </div>
         </section>
-
+                                <!--      ......CORPO.......        -->
         <section id="geral">
             <div class="container">
                 <section>
@@ -189,6 +211,119 @@
             </div>
 
         </section>
+
+                                     <!--      ......RODAPE.......        -->
+        <footer>
+            <div class="container flexColumn">
+                <div class="footer_menu">
+                    <div class="fm_1">
+                        <a href="">
+                            <h2>Helth Insurance</h2>
+                            <h3>Here in medicenter we have individual ></h3>
+                        </a>
+                    </div>
+                    <div class="fm_2">
+                        <a href="">
+                            <h2>Medical Records</h2>
+                            <h3>Here in medicenter we have individual ></h3>
+                        </a>
+                    </div>
+                    <div class="fm_3">
+                        <a href="">
+                            <h2>Helth Insurance</h2>
+                            <h3>Here in medicenter we have individual ></h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_area">
+                    <div class="footer_areaitem">
+                        <div class="widget">
+                            <div class="widget_title">
+                                 <div class="widget_title_text">Medicenter Clinic</div>
+                                 <div class="widget_title_bar"></div>
+                                 </div>
+                            </div>
+                            <div class="widget_body_1">
+                                <div class="widget_body_1">
+                                    <a href=""> Mauris adipisicing Mauris fringilla turpis interdum sed pulvinar risi malesuada individual.  
+                                        
+                               </div>
+
+                               <div class="widget_body_1">
+                                <a href=""> Medicenter Clinic <br>
+                                            <div class="space">
+                                            <div class="flex_1">33 Farlane Street</div>  <div>+123 655 655</div>
+                                            </div>
+
+                                            <div class="space">
+                                            <div class="flex_1">Keilor East</div>  <div>+123 755 755</div>
+                                            </div>
+
+                                            <div class="space">
+                                            <div class="flex_1">Vic 3033, Australia </div> <div class="email"><strong>Medicenter@gmail.com </strong></div>
+                                            </div>                                    
+                           </div>
+                        </div>
+                    </div>
+                
+                    <a href=""></a><div class="footer_areaitem">
+                        <div class="widget2">
+                            <div class="widget_title">
+                                 <div class="widget_title_text">Latest Post</div>
+                                 <div class="widget_title_bar"></div>
+                                 </div>
+                        </div>
+                            <div class="widget_body_2">
+                                 <a href=""> -> Mauris adipisicing Mauris fringilla turpis interdum:
+                                pulvinar nisi malesuada.
+                                <div class="widget_body_date">6 year ago</div></a>
+
+                                 <a href=""> -> Lorem ipsum, dolor sit amat velum.
+                                <div class="widget_body_date">6 year ago</div></a>
+
+                                <a href=""> -> Mauris adipisicing Mauris fringilla turpis interdum:
+                                    pulvinar nisi malesuada.
+                                    <div class="widget_body_date">6 year ago</div></a>
+                               
+                           </div>
+                    </div>
+                    
+                    <div class="footer_areaitem">
+                        <div class="widget">
+                            <div class="widget_title">
+                                 <div class="widget_title_text">Latest Tweets</div>
+                                 <div class="widget_title_bar"></div>
+                            </div>
+                        </div>
+                            <div class="widget_body_1">
+                            <a href=""> -> We've released new version (v1.2) of our #CleanMate 
+                            #Cleaning Company #Maid #Gardening #WordPress Theme. Please che... <strong>/tYVkhmpb30 </strong> 
+                            <div class="widget_body_date">6 year ago</div></a>  
+                                    
+                        </div>
+
+                           <div class="widget_body_1">
+                            <a href=""> -> We've released new version (v1.2) of our #CleanMate 
+                            #Cleaning Company #Maid #Gardening #WordPress Theme. Please che... <strong>/tYVkhmpb30 </strong> 
+                            <div class="widget_body_date">6 year ago</div></a>  
+                                
+                       </div>
+
+                            <div class="widget_body_1">
+                            <a href=""> -> We've released new version (v1.2) of our #CleanMate 
+                            #Cleaning Company #Maid #Gardening #WordPress Theme. Please che... <strong>/tYVkhmpb30 </strong> 
+                            <div class="widget_body_date">6 year ago</div></a>  
+                            
+                </div>
+                    </div>
+
+                </div>
+
+                <div class="footer_copy">
+                    Copyright - Todos os direitos reservados
+                </div>
+            </div>
+        </footer>
 
     </body>
 </html>
